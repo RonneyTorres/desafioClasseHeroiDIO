@@ -19,21 +19,12 @@ class heroi {
   }
 }
 
-let herois = {
-  hero: {
-    0: ['Aragorn', 45, 'guerreiro'],
-    1: ['Gandalf', 200, 'mago'],
-    2: ['Aang', 1000, 'monge'],
-    3: ['Naruto', 27, 'ninja'],
-  }
-}
+let hero0 = new heroi('Aragorn', 45, 'guerreiro')
+let hero1 = new heroi('Gandalf', 200, 'mago')
+let hero2 = new heroi('Aang', 1000, 'monge')
+let hero3 = new heroi('Naruto', 27, 'ninja')
 
-generarHerois(herois)
-
-function generarHerois(herois){
-  for(let index in herois.hero){
-    let [nome, idade, tipo] = herois.hero[index]
-    let teste = new heroi(nome, idade, tipo)
-    teste.atacar();
-  }
-}
+hero0.atacar();
+hero1.atacar();
+hero2.atacar();
+hero3.atacar();
