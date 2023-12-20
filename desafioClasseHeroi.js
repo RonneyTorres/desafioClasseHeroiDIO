@@ -33,7 +33,7 @@ generarHerois(herois)
 function generarHerois(herois){
   for(let index in herois.hero){
     let [nome, idade, tipo] = herois.hero[index]
-    let teste = new heroi(nome, idade, tipo)
-    teste.atacar();
+    let hero = new heroi(nome, idade, tipo)
+    hero.atacar();
   }
 }
